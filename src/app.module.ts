@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Connection } from 'typeorm';
 import { UsersModule } from './users/users.module';
-import { UsersHttpModule } from './users/users-http.module';
 import { ConfigModule } from '@nestjs/config';
 import { config } from './config';
 import { DatabaseConfig } from './database.config';
@@ -18,7 +17,7 @@ import { DatabaseConfig } from './database.config';
       useClass: DatabaseConfig,
     }),
     UsersModule,
-    UsersHttpModule,
+    UsersModule,
   ],
   controllers: [],
   providers: [],
