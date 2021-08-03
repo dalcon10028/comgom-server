@@ -1,0 +1,10 @@
+{
+  "type": "mysql",
+  "host": "comjung.cx5qkeshvez5.ap-northeast-2.rds.amazonaws.com",
+  "port": 3306,
+  "username": "cjadmin",
+  "password": "cjadmin2012!",
+  "database": "yeon",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "synchronize": true
+}
