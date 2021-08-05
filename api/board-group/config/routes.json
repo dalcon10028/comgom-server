@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/board-groups",
+      "handler": "board-group.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/board-groups/count",
+      "handler": "board-group.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/board-groups/:id",
+      "handler": "board-group.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/board-groups",
+      "handler": "board-group.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/board-groups/:id",
+      "handler": "board-group.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/board-groups/:id",
+      "handler": "board-group.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
