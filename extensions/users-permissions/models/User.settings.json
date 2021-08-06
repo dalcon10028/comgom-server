@@ -70,6 +70,10 @@
     "likes": {
       "via": "user",
       "collection": "like"
+    },
+    "nickname": {
+      "type": "string",
+      "maxLength": 10
     }
   }
 }

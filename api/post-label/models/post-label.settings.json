@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_labels",
+  "info": {
+    "name": "PostLabel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "color": {
+      "type": "string",
+      "unique": false
+    },
+    "label": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "posts": {
+      "collection": "post",
+      "via": "post_label"
+    }
+  }
+}

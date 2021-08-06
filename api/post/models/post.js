@@ -5,4 +5,14 @@
  * to customize this model
  */
 
-module.exports = {};
+module.exports = {
+  lifecycles: {
+    async afterFindOne(result, params, popluate) {
+      const res = await strapi.query('post')
+        .model.query(q => {
+          q.where('id', result.id);
+          q.increment('view', 1);
+        }).fetch();
+    }
+  }
+};

@@ -18,9 +18,9 @@
       "required": true
     },
     "author": {
+      "via": "posts",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "posts"
+      "model": "user"
     },
     "view": {
       "type": "integer",
@@ -42,6 +42,10 @@
     "likes": {
       "via": "post",
       "collection": "like"
+    },
+    "post_label": {
+      "via": "posts",
+      "model": "post-label"
     }
   }
 }
