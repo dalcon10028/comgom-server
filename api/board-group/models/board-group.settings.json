@@ -21,6 +21,9 @@
     },
     "code": {
       "type": "string"
+    },
+    "icon": {
+      "type": "string"
     }
   }
 }

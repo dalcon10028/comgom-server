@@ -24,6 +24,10 @@
       "via": "likes",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "replies": {
+      "via": "like",
+      "collection": "reply"
     }
   }
 }

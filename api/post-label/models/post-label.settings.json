@@ -20,8 +20,8 @@
       "maxLength": 10
     },
     "posts": {
-      "collection": "post",
-      "via": "post_label"
+      "via": "post_label",
+      "collection": "post"
     }
   }
 }

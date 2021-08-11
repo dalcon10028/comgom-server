@@ -27,6 +27,10 @@
     "likes": {
       "via": "comment",
       "collection": "like"
+    },
+    "replies": {
+      "via": "comment",
+      "collection": "reply"
     }
   }
 }

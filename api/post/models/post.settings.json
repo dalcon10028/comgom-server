@@ -46,6 +46,10 @@
     "post_label": {
       "via": "posts",
       "model": "post-label"
+    },
+    "notice": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

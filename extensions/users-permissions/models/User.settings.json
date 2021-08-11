@@ -74,6 +74,9 @@
     "nickname": {
       "type": "string",
       "maxLength": 10
+    },
+    "avatar": {
+      "type": "string"
     }
   }
 }
