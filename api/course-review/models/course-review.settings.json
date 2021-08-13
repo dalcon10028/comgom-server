@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_reviews",
+  "info": {
+    "name": "CourseReview",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "professor": {
+      "type": "string"
+    },
+    "lecture": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "author": {
+      "via": "course_reviews",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "homework": {
+      "type": "string"
+    },
+    "team": {
+      "type": "string"
+    },
+    "credit": {
+      "type": "integer"
+    },
+    "review": {
+      "type": "text"
+    },
+    "shortReview": {
+      "type": "string"
+    }
+  }
+}

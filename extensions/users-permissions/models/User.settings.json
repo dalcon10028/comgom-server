@@ -71,12 +71,17 @@
       "via": "user",
       "collection": "like"
     },
-    "nickname": {
-      "type": "string",
-      "maxLength": 10
-    },
     "avatar": {
-      "type": "string"
+      "type": "string",
+      "default": "no-img.png"
+    },
+    "course_reviews": {
+      "via": "author",
+      "collection": "course-review"
+    },
+    "point": {
+      "type": "integer",
+      "default": 20
     }
   }
 }

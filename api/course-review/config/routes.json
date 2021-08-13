@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/course-reviews",
+      "handler": "course-review.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/course-reviews/count",
+      "handler": "course-review.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/course-reviews/:id",
+      "handler": "course-review.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/course-reviews",
+      "handler": "course-review.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/course-reviews/:id",
+      "handler": "course-review.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/course-reviews/:id",
+      "handler": "course-review.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
