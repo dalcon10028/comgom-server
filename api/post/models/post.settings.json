@@ -39,10 +39,6 @@
       "via": "post",
       "collection": "comment"
     },
-    "likes": {
-      "via": "post",
-      "collection": "like"
-    },
     "post_label": {
       "via": "posts",
       "model": "post-label"

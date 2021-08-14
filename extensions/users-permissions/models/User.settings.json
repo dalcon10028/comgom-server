@@ -67,10 +67,6 @@
       "via": "author",
       "collection": "comment"
     },
-    "likes": {
-      "via": "user",
-      "collection": "like"
-    },
     "avatar": {
       "type": "string",
       "default": "https://lh3.googleusercontent.com/ogw/ADea4I6iwWdQjq00fmlI9Myd1PeQh59tjuT0K8RzMOx2bw=s83-c-mo"

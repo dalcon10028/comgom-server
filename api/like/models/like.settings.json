@@ -12,22 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "post": {
-      "model": "post",
-      "via": "likes"
-    },
-    "comment": {
-      "model": "comment",
-      "via": "likes"
-    },
-    "user": {
-      "via": "likes",
+    "author": {
       "plugin": "users-permissions",
       "model": "user"
     },
-    "replies": {
-      "via": "like",
-      "collection": "reply"
+    "course_review": {
+      "model": "course-review",
+      "via": "likes"
     }
   }
 }

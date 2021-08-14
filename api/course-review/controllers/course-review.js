@@ -21,7 +21,7 @@ module.exports = {
     } else {
       entities = await strapi.services['course-review'].find(ctx.query);
     }
-    entities = entities.map(entity => { 
+    entities = entities.map(entity => {
       delete entity.author;
       delete entity.homework;
       delete entity.team;
@@ -48,8 +48,6 @@ module.exports = {
     }
     const entity = await strapi.services['course-review'].findOne({ id });
     entity.author = { id: entity.author.id };
-    entity.like = entity.likes.length;
-    delete entity.likes;
     const { checked_reviews } = await strapi.query('user', 'users-permissions').findOne({ id:user.id });
     let isChecked = false;
     checked_reviews.forEach(review => {
@@ -80,13 +78,13 @@ module.exports = {
     const { course_reviews, checked_reviews } = await strapi.query('user', 'users-permissions').findOne({ id:user.id });
     await strapi.query('user', 'users-permissions')
       .update(
-        { id: user.id }, 
+        { id: user.id },
         { point: course_reviews.length === 1 ? user.point + 40 : user.point + 10, checked_reviews: [ ...checked_reviews, entity.id ] });
     await strapi
       .query('history')
-      .create({ 
-        receiver: user.id, 
-        type: 'point', 
+      .create({
+        receiver: user.id,
+        type: 'point',
         message: `+${course_reviews.length === 1 ? 40 : 10}포인트: 강의리뷰 작성`, checked: false, target: entity.id })
     return sanitizeEntity(entity, { model: strapi.models['course-review'] });
   },

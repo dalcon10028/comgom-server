@@ -21,10 +21,6 @@
     "comment": {
       "model": "comment",
       "via": "replies"
-    },
-    "like": {
-      "model": "like",
-      "via": "replies"
     }
   }
 }

@@ -46,6 +46,7 @@
       "collection": "tag"
     },
     "likes": {
+      "via": "course_review",
       "collection": "like"
     }
   }
