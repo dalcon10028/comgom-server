@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -40,6 +40,13 @@
     },
     "shortReview": {
       "type": "string"
+    },
+    "tags": {
+      "via": "course_reviews",
+      "collection": "tag"
+    },
+    "likes": {
+      "collection": "like"
     }
   }
 }

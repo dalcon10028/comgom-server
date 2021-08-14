@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/board-groups",
-      "handler": "board-group.find",
+      "path": "/histories",
+      "handler": "history.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/board-groups/count",
-      "handler": "board-group.count",
+      "path": "/histories/count",
+      "handler": "history.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/board-groups/:id",
-      "handler": "board-group.findOne",
+      "path": "/histories/:id",
+      "handler": "history.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/board-groups",
-      "handler": "board-group.create",
+      "path": "/histories",
+      "handler": "history.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/board-groups/:id",
-      "handler": "board-group.update",
+      "path": "/histories/:id",
+      "handler": "history.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/board-groups/:id",
-      "handler": "board-group.delete",
+      "path": "/histories/:id",
+      "handler": "history.delete",
       "config": {
         "policies": []
       }

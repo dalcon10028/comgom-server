@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "boards",
+  "collectionName": "tags",
   "info": {
-    "name": "board",
+    "name": "Tag",
     "description": ""
   },
   "options": {
@@ -14,15 +14,12 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true,
       "unique": true
     },
-    "posts": {
-      "via": "board",
-      "collection": "post"
-    },
-    "explanation": {
-      "type": "string"
+    "course_reviews": {
+      "via": "tags",
+      "collection": "course-review",
+      "dominant": true
     }
   }
 }

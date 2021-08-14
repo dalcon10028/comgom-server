@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "name": "History",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "checked": {
+      "type": "boolean",
+      "default": false
+    },
+    "type": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "receiver": {
+      "via": "histories",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "sender": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "target": {
+      "type": "string"
+    }
+  }
+}
