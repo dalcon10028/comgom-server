@@ -15,7 +15,6 @@ module.exports = {
           q.update('checked', true)
         })
         .fetchAll()
-        console.log(data)
     }
   }
 };

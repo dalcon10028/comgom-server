@@ -55,7 +55,7 @@ module.exports = {
     });
     if (!isChecked) {
       await strapi.query('user', 'users-permissions').update({ id: user.id }, { point: user.point - 5, checked_reviews: [ ...checked_reviews, id ] });
-      await strapi.query('history').create({ receiver: user.id, type: 'point', message: '-5포인트: 강의리뷰 읽기', checked: false })
+      await strapi.query('history').create({ receiver: user.id, type: 'point', message: '-5포인트: 강의리뷰 읽기', checked: false, target: id })
     }
     return sanitizeEntity(entity, { model: strapi.models['course-review'] });
   },

@@ -20,6 +20,9 @@
       "via": "tags",
       "collection": "course-review",
       "dominant": true
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

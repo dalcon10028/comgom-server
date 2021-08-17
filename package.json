@@ -9,7 +9,9 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "strapi-provider-email-gmail-oauth2": "^0.1.7"
+  },
   "dependencies": {
     "knex": "0.21.18",
     "mysql": "2.18.1",
@@ -22,7 +24,6 @@
     "strapi-plugin-i18n": "3.6.5",
     "strapi-plugin-upload": "3.6.5",
     "strapi-plugin-users-permissions": "3.6.5",
-    "strapi-provider-email-gmail-oauth2": "npm:@dalcon10280/strapi-provider-email-gmail-oauth2@0.1.9",
     "strapi-provider-email-sendgrid": "^3.6.6",
     "strapi-provider-upload-aws-s3": "^3.6.5",
     "strapi-utils": "3.6.5"
